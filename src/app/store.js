@@ -16,7 +16,7 @@ const VOLUMENCHANGE = "VOLUMENCHANGE"
 const soundsReducer = (state=initialState, action) => {
     switch (action.type){
       case TEMPO:
-        return {...state, value: action.value, name: action.name}
+        return {...state, name: action.name}
       case POWERSWITCH:
         return {...state, power: action.power, value: '', name: ''}
       case VOLUMENCHANGE:

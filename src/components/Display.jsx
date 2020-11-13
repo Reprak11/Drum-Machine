@@ -1,7 +1,12 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-const Display = () => (
-    <h2>Ejemplo</h2>
+const Display = ({name}) => (
+<h2>{name}</h2>
 )
 
-export default Display
+const mapStateToProps = state => ({
+    name: state.name
+})
+
+export default connect(mapStateToProps, null)(Display)
