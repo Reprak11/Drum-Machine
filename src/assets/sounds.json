@@ -2,55 +2,55 @@
     "sounds":[
         {
             "value": "Q",
-            "keyletter": 81,
+            "keyletter": "q",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3",
             "soundName": "Heater-1"
         },
         {
             "value": "W",
-            "keyletter": 87,
+            "keyletter": "w",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3",
             "soundName": "Heater-2"
         },
         {
             "value": "E",
-            "keyletter": 69,
+            "keyletter": "e",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" ,
             "soundName": "Heater-3"
         },
         {
             "value": "A",
-            "keyletter": 65,
+            "keyletter": "a",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3",
             "soundName": "Heater-4"
         },
         {
             "value": "S",
-            "keyletter": 83,
+            "keyletter": "s",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3",
             "soundName": "Clap"
         },
         {
             "value": "D",
-            "keyletter": 68,
+            "keyletter": "d",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3",
             "soundName": "Open-HH"
         },
         {
             "value": "Z",
-            "keyletter": 90,
+            "keyletter": "z",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3",
             "soundName": "Kick-n'-hat"
         },
         {
             "value": "X",
-            "keyletter": 88,
+            "keyletter": "x",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
             "soundName": "Kick"
         },
         {
             "value": "C",
-            "keyletter": 67,
+            "keyletter": "c",
             "soundURL": "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
             "soundName": "Closed-HH"
         }

@@ -2,14 +2,30 @@ import React from 'react';
 import './App.css';
 import Title from "./components/Title"
 import Beatbox from "./components/Beatbox"
+import { connect } from 'react-redux'
 
-function App() {
+
+
+function App({changeKeySound}) {
+    const handleKeyPress = event => {
+        changeKeySound(event.key)
+    };
   return (
-    <div>
+    <div tabIndex="0" onKeyPress={handleKeyPress}>
       <Title />
       <Beatbox />
     </div>
   );
 }
 
-export default App;
+const mapDispatchToProps = (dispatch) => (
+  {
+      changeKeySound: (keyPressed) => {dispatch({
+          type: 'KEY',
+          keyPressed: keyPressed 
+          })
+      }
+  }
+)
+
+export default connect(null, mapDispatchToProps) (App);

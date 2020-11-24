@@ -2,27 +2,27 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 
-const OneButton = ({buttonText, soundURL, handleKey,keyletter, name,changeSound}) => {
+const OneButton = ({buttonText, soundURL,keyletter, name,changeSound}) => {
 
 const actionButton = () => {
-    changeSound(name)
-    document.getElementById(name).play()
+    changeSound(name, soundURL)
+    //document.getElementById(name).play()
 }
-
+//<audio id={name} src= {soundURL}></audio>
 return (<div>
-    <button onKeyDown={(e) => handleKey(e,keyletter)} onClick={actionButton}>{buttonText}</button>
-    <audio id={name} src= {soundURL}></audio>
+    <button type="button" onClick={actionButton}>{buttonText}</button>
 </div>)
 }
 
 
 const mapDispatchToProps = (dispatch) => (
     {
-        changeSound: (name) => {dispatch({
+        changeSound: (name, soundURL) => {dispatch({
             type: 'TEMPO',
-            name: name
-        })
-    }
+            name: name,
+            soundURL: soundURL
+            })
+        }
     }
 )
 
