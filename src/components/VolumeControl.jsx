@@ -5,7 +5,9 @@ const VolumeControl = ({volume, changeVolume}) => {
     const handleVolume = e =>{
         changeVolume(e.target.value)
     }
-    return(<input type="range" min="0" max="100" step="1" value={volume} onChange={handleVolume}/>)
+    return(<div className="volume-control">
+            <input type="range" min="0" max="100" step="1" value={volume} onChange={handleVolume}/>
+        </div>)
 }
 
 const mapStateToProps = state => ({

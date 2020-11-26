@@ -2,7 +2,10 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 const Display = ({name}) => (
-<h2>{name}</h2>
+    <div className="display">
+        <h2>{name}</h2>
+    </div>
+    
 )
 
 const mapStateToProps = state => ({

@@ -5,9 +5,9 @@ import AudioControl from './AudioControl'
 
 const Beatbox = ({changeKeySound}) => {
 
-    return (<div>
-        <Buttonpad />
+    return (<div className="beatbox">
         <AudioControl />
+        <Buttonpad />
     </div>)
 }
 

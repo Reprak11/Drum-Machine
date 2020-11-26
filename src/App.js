@@ -11,7 +11,7 @@ function App({changeKeySound}) {
         changeKeySound(event.key)
     };
   return (
-    <div tabIndex="0" onKeyPress={handleKeyPress}>
+    <div className="drumbox" tabIndex="0" onKeyPress={handleKeyPress}>
       <Title />
       <Beatbox />
     </div>

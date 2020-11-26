@@ -9,10 +9,10 @@ const PowerButton = ({power,changePower}) => {
             changePower(true)
         }
     }
-    return (<div>
-        <label>
+    return (<div className="toggle-switch">
+        <label className="switch">
             <input onClick={inputAction} type="checkbox" />
-            <span />
+            <span class="slider" />
         </label>
     </div>)
 }

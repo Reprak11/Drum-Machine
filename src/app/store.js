@@ -35,35 +35,36 @@ const soundsReducer = (state=initialState, action) => {
         return {...state, volume: action.volume}
       case KEY:
       if (state.power){
-        if (action.keyPressed === 'q'){
-          playAudio(sounds[0].soundURL, state.volume)
-          return {...state, name: sounds[0].soundName}
-        } else if (action.keyPressed === 'w'){
-          playAudio(sounds[1].soundURL, state.volume)
-          return {...state, name: sounds[1].soundName}
-        } else if (action.keyPressed === 'e'){
-          playAudio(sounds[2].soundURL, state.volume)
-          return {...state, name: sounds[2].soundName}
-        } else if (action.keyPressed === 'a'){
-          playAudio(sounds[3].soundURL, state.volume)
-          return {...state, name: sounds[3].soundName}
-        } else if (action.keyPressed === 's'){
-          playAudio(sounds[4].soundURL, state.volume)
-          return {...state, name: sounds[4].soundName}
-        } else if (action.keyPressed === 'd'){
-          playAudio(sounds[5].soundURL, state.volume)
-          return {...state, name: sounds[5].soundName}
-        } else if (action.keyPressed === 'z'){
-          playAudio(sounds[6].soundURL, state.volume)
-          return {...state, name: sounds[6].soundName}
-        } else if (action.keyPressed === 'x'){
-          playAudio(sounds[7].soundURL, state.volume)
-          return {...state, name: sounds[7].soundName}
-        } else if (action.keyPressed === 'c'){
-          playAudio(sounds[8].soundURL, state.volume)
-          return {...state, name: sounds[8].soundName}
-        } else {
-          return state
+        switch (action.keyPressed){
+          case 'q':
+            playAudio(sounds[0].soundURL, state.volume)
+            return {...state, name: sounds[0].soundName}
+          case 'w':
+            playAudio(sounds[1].soundURL, state.volume)
+            return {...state, name: sounds[1].soundName}
+          case 'e':
+            playAudio(sounds[2].soundURL, state.volume)
+            return {...state, name: sounds[2].soundName}
+          case 'a':
+            playAudio(sounds[3].soundURL, state.volume)
+            return {...state, name: sounds[3].soundName}
+          case 's':
+            playAudio(sounds[4].soundURL, state.volume)
+            return {...state, name: sounds[4].soundName}
+          case 'd':
+            playAudio(sounds[5].soundURL, state.volume)
+            return {...state, name: sounds[5].soundName}
+          case 'z':
+            playAudio(sounds[6].soundURL, state.volume)
+            return {...state, name: sounds[6].soundName}
+          case 'x':
+            playAudio(sounds[7].soundURL, state.volume)
+            return {...state, name: sounds[7].soundName}
+          case 'c':
+            playAudio(sounds[8].soundURL, state.volume)
+            return {...state, name: sounds[8].soundName}
+          default:
+            return state
         }
       } else {
         return state

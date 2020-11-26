@@ -5,14 +5,16 @@ import VolumenControl from './VolumeControl'
 
 const AudioControl = () =>(
     <div>
-        <div>
-            <h3>Power</h3>
-            <PowerButton />
-        </div>
         <Display />
-        <div>
-            <h3>Volumen</h3>
-            <VolumenControl />
+        <div className="controls">
+            <div className="one-control">
+                <h3 className="control-text">Power</h3>
+                <PowerButton />
+            </div>
+            <div className="one-control">
+                <h3 className="control-text">Volume</h3>
+                <VolumenControl />
+            </div>
         </div>
     </div>
 )
