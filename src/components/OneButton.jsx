@@ -9,9 +9,9 @@ const actionButton = () => {
     //document.getElementById(name).play()
 }
 //<audio id={name} src= {soundURL}></audio>
-return (<div>
-    <button type="button" onClick={actionButton}>{buttonText}</button>
-</div>)
+return (
+    <button className="cacafuti-200" type="button" onClick={actionButton}>{buttonText}</button>
+)
 }
 
 

@@ -2,10 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 html, body, main {
-  height: 90vh;
+  height: 95vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,12 +22,14 @@ html, body, main {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'Cabin', sans-serif;
-  background-color: #DC0008;
+  background-color: #D9303E;
 }
 
 .drumbox {
   padding: 2em;
-  border-radius: 3px;
+  border-radius: 10px;
+  -webkit-box-shadow: 9px 8px 5px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 9px 8px 5px 4px rgba(0, 0, 0, 0.2);
   background-color: #fbfcfd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,12 +158,12 @@ html, body, main {
 }
 
 .drumbox .beatbox .controls .one-control .toggle-switch input:checked + .slider {
-  background-color: #DC0008;
+  background-color: #D9303E;
 }
 
 .drumbox .beatbox .controls .one-control .toggle-switch input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #DC0008;
-          box-shadow: 0 0 1px #DC0008;
+  -webkit-box-shadow: 0 0 1px #D9303E;
+          box-shadow: 0 0 1px #D9303E;
 }
 
 .drumbox .beatbox .controls .one-control .toggle-switch input:checked + .slider:before {
@@ -183,7 +186,7 @@ html, body, main {
   cursor: pointer;
   -webkit-box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
           box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #DC0008;
+  background: #D9303E;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
@@ -202,7 +205,7 @@ html, body, main {
 }
 
 .drumbox .beatbox .controls .one-control .volume-control input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #DC0008;
+  background: #D9303E;
 }
 
 .drumbox .beatbox .controls .one-control .volume-control input[type=range]::-moz-range-track {
@@ -210,7 +213,7 @@ html, body, main {
   height: 5.4px;
   cursor: pointer;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #DC0008;
+  background: #D9303E;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
@@ -236,14 +239,14 @@ html, body, main {
 }
 
 .drumbox .beatbox .controls .one-control .volume-control input[type=range]::-ms-fill-lower {
-  background: #DC0008;
+  background: #D9303E;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 
 .drumbox .beatbox .controls .one-control .volume-control input[type=range]::-ms-fill-upper {
-  background: #DC0008;
+  background: #D9303E;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -261,5 +264,26 @@ html, body, main {
 
 .drumbox .beatbox .controls .one-control .volume-control input[type=range]:focus {
   background: #0000002c;
+}
+
+.drumbox .beatbox .button-grid {
+  padding-top: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 1em 1em;
+}
+
+.drumbox .beatbox .button-grid .cacafuti-200 {
+  border: solid 3.5px #D9303E;
+  border-radius: 4px;
+  -webkit-box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 4px 4px 1px rgba(0, 0, 0, 0.2);
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #b3b0b13b;
+  font-size: 30px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=App.css.map */

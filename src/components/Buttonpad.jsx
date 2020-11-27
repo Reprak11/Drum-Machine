@@ -6,7 +6,7 @@ const Buttonpad = ({sounds}) => {
     //const buttons = sounds.map(element => <oneButton />)
 
 
-return(<div>
+return(<div className="button-grid">
         {sounds.map(element => <OneButton keyletter={element.keyletter} buttonText={element.value} soundURL={element.soundURL} name={element.soundName}/>)}
     </div>)
     
