@@ -35,7 +35,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## Built with 
 
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
-- [SASS](http://getbootstrap.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
+- [SASS](https://sass-lang.com/) - Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
 
 © [Reynaldo Armenta ](https://github.com/Reprak11)
